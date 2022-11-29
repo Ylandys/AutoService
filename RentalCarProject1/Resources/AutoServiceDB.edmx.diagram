@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="338937bd88124c2da3c8a26c2e1f2497" Name="Diagram1">
+        <EntityTypeShape EntityType="AutoServiceModel.Clients" Width="1.5" PointX="3" PointY="6.125" />
+        <EntityTypeShape EntityType="AutoServiceModel.Genders" Width="1.5" PointX="0.75" PointY="6.875" />
+        <EntityTypeShape EntityType="AutoServiceModel.Orders" Width="1.5" PointX="8.25" PointY="0.875" />
+        <EntityTypeShape EntityType="AutoServiceModel.Services_" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="AutoServiceModel.ServicesImages" Width="1.5" PointX="0.75" PointY="1.375" />
+        <EntityTypeShape EntityType="AutoServiceModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="4.75" />
+        <AssociationConnector Association="AutoServiceModel.FK_Clients_Genders" />
+        <AssociationConnector Association="AutoServiceModel.FK_Orders_Clients" />
+        <AssociationConnector Association="AutoServiceModel.FK_Orders_Services_" />
+        <AssociationConnector Association="AutoServiceModel.FK_Services__ServicesImages" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
