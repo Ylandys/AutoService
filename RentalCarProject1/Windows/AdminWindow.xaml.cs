@@ -75,7 +75,7 @@ namespace RentalCarProject1.Windows
 
         public void Members(object sender, RoutedEventArgs e)
         {
-
+            Main.Content = new ClientPage();
         }
 
         private void btnServices_Click(object sender, RoutedEventArgs e)

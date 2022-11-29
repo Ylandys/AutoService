@@ -114,14 +114,24 @@
     <Compile Include="Windows\AddNewClient.xaml.cs">
       <DependentUpon>AddNewClient.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\AddNewServices.xaml.cs">
+      <DependentUpon>AddNewServices.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\AdminWindow.xaml.cs">
       <DependentUpon>AdminWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\Cars.xaml.cs">
       <DependentUpon>Cars.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\ClientPage.xaml.cs">
+      <DependentUpon>ClientPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\Genders.cs" />
     <Page Include="Windows\AddNewClient.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AddNewServices.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -130,6 +140,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\Cars.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ClientPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

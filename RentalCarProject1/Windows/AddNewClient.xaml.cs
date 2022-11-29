@@ -1,10 +1,7 @@
-﻿using Microsoft.Win32;
-using RentalCarProject1.Resources;
+﻿using RentalCarProject1.Resources;
 using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,58 +20,18 @@ namespace RentalCarProject1.Windows
     /// </summary>
     public partial class AddNewClient : Window
     {
-        AutoServiceEntities database;
-        public AddNewClient(AutoServiceEntities context1, Services_ service)
+        AutoServiceEntities context;
+        public AddNewClient(AutoServiceEntities database, Clients client)
         {
-            this.database = context1;
-            this.DataContext= service;
-
             InitializeComponent();
-        }
-
-
-        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-        }
-
-        private bool IsMaximized = true;
-
-        private void Border_MouseLeftDown(object sender, MouseButtonEventArgs e)
-        {
-
-            if (e.ClickCount == 2)
-            {
-                if (IsMaximized)
-                {
-                    this.WindowState = WindowState.Normal;
-                    this.Width = 480;
-                    this.Height = 684;
-
-                    IsMaximized = false;
-                }
-                else
-                {
-                    this.WindowState = WindowState.Maximized;
-                    IsMaximized = true;
-                }
-            }
+            this.context = database;
+            this.DataContext = client;
         }
 
         private void btn_addClient(object sender, RoutedEventArgs e)
         {
-                database.SaveChanges();
-            /*Добавление вводимых данных в базу
-            car.ServiceName= t2.Text;
-            car.Duration= int.Parse(t3.Text);
-            car.Cost= decimal.Parse(t4.Text);
-            car.Discond = double.Parse(t5.Text);
-
-            MessageBox.Show("Машина успешно добавлена!");
-
-
-                database.Services_.Add(car);
-                this.Close();
-            */
+            context.SaveChanges();
+            this.Close();
         }
 
         private void btn_exitClick(object sender, RoutedEventArgs e)

@@ -61,7 +61,7 @@ namespace RentalCarProject1.Windows
             {
                 reda1.ServicesImages = new ServicesImages { ImagePath = das.FileName };
             }
-            AddNewClient newClientWindow = new AddNewClient(context, reda1);
+            AddNewServices newClientWindow = new AddNewServices(context, reda1);
             newClientWindow.ShowDialog();
         }
 
@@ -103,7 +103,7 @@ namespace RentalCarProject1.Windows
             {
                 NewDob.ServicesImages = new ServicesImages { ImagePath = das.FileName };
             }
-            AddNewClient newClientWindow = new AddNewClient(context, NewDob);
+            AddNewServices newClientWindow = new AddNewServices(context, NewDob);
             newClientWindow.ShowDialog();
 
             refreshdatagrid();
