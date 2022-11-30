@@ -62,18 +62,6 @@ namespace RentalCarProject1.Windows
         private void btn_addClient(object sender, RoutedEventArgs e)
         {
                 database.SaveChanges();
-            /*Добавление вводимых данных в базу
-            car.ServiceName= t2.Text;
-            car.Duration= int.Parse(t3.Text);
-            car.Cost= decimal.Parse(t4.Text);
-            car.Discond = double.Parse(t5.Text);
-
-            MessageBox.Show("Машина успешно добавлена!");
-
-
-                database.Services_.Add(car);
-                this.Close();
-            */
         }
 
         private void btn_exitClick(object sender, RoutedEventArgs e)

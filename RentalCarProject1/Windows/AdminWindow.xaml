@@ -57,12 +57,12 @@
 
                         <!--#Dashboard-->
                         <StackPanel DockPanel.Dock="Top">
-                            <Button Style="{StaticResource menuButton}"
-                                    materialDesign:ShadowAssist.ShadowDepth="Depth0" materialDesign:ButtonAssist.CornerRadius="10"
+                            <Button x:Name="orders" Style="{StaticResource menuButton}"
+                                    materialDesign:ShadowAssist.ShadowDepth="Depth0" materialDesign:ButtonAssist.CornerRadius="10" Click="Orders"
                                     >
                                 <StackPanel Orientation="Horizontal">
                                     <Icon:PackIconMaterial Kind="Home" Width="15" Height="15" Margin="20 2 20 0"/>
-                                    <TextBlock Text="Машины"/>
+                                    <TextBlock Text="Записи"/>
                                 </StackPanel>
                             </Button>
 

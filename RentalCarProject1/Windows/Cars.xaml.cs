@@ -33,13 +33,6 @@ namespace RentalCarProject1.Windows
             InitializeComponent();
             context = new AutoServiceEntities();
             TableClients.ItemsSource = context.Services_.ToList();
-            
-            //Client c = new Client();
-            //c.id_client;
-
-
-            
-            
 
         }
 

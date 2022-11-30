@@ -82,7 +82,7 @@ namespace RentalCarProject1.Windows
         {
             string roles = Role.Text;
 
-            if (roles == $"Пол: Мужкой")
+            if (roles == $"Пол: Мужской")
             {
                 Main.Content = new Cars();
             }
@@ -90,6 +90,11 @@ namespace RentalCarProject1.Windows
             {
                 MessageBox.Show("Недостаточно прав для совершения этой операции!");
             }
+        }
+
+        private void Orders(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new OrdersPage();
         }
     }
 }
